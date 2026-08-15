@@ -1,0 +1,261 @@
+/* ========================================
+   Works Page
+======================================== */
+
+/* ========================================
+   Page Hero
+======================================== */
+
+.page-hero {
+  padding: 180px 0 120px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero__title {
+  margin-bottom: 24px;
+
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.page-hero__description {
+  color: var(--color-text-sub);
+  font-size: 16px;
+}
+
+/* ========================================
+   Works List
+======================================== */
+
+.works-page {
+  padding: var(--spacing-section) 0;
+}
+
+/* ========================================
+   Work Detail
+======================================== */
+
+.work-detail {
+  padding: 80px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.work-detail:last-of-type {
+  border-bottom: none;
+}
+
+/* ----------------------------------------
+   Work Detail Header
+---------------------------------------- */
+
+.work-detail__header {
+  margin-bottom: 48px;
+}
+
+.work-detail__title {
+  margin: 16px 0 8px;
+
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.work-detail__category {
+  color: var(--color-text-sub);
+  font-size: 14px;
+}
+
+/* ----------------------------------------
+   Work Detail Preview
+---------------------------------------- */
+
+.work-detail__preview {
+  margin-bottom: 48px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-sub);
+}
+
+.work-detail__preview a {
+  display: block;
+}
+
+.work-detail__preview img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition: transform 0.4s ease;
+}
+
+.work-detail__preview a:hover img {
+  transform: scale(1.03);
+}
+
+/* ----------------------------------------
+   Work Detail Content
+---------------------------------------- */
+
+.work-detail__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+
+  padding-top: 48px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.work-detail__section h3 {
+  margin-bottom: 12px;
+
+  color: var(--color-primary);
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-detail__section p {
+  color: var(--color-text-sub);
+
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.work-detail__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.work-detail__skills span {
+  padding: 8px 16px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+/* ----------------------------------------
+   Work Detail Link
+---------------------------------------- */
+
+.work-detail__link {
+  margin-top: 40px;
+}
+
+/* ----------------------------------------
+   Placeholder (Coming Soon)
+---------------------------------------- */
+
+.work-detail--placeholder .work-detail__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 280px;
+
+  color: var(--color-text-sub);
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  border: 1px dashed var(--color-border);
+  background-color: var(--color-background-sub);
+}
+
+/* ========================================
+   Work Contact (CTA)
+======================================== */
+
+.work-contact {
+  padding: var(--spacing-section) 0;
+
+  text-align: center;
+
+  background-color: var(--color-background-sub);
+}
+
+.work-contact__description {
+  max-width: 480px;
+
+  margin: 24px auto 40px;
+
+  color: var(--color-text-sub);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 768px) {
+  /* ----------------------------------------
+     Page Hero
+  ---------------------------------------- */
+
+  .page-hero {
+    padding: 140px 0 80px;
+  }
+
+  .page-hero__title {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  /* ----------------------------------------
+     Work Detail
+  ---------------------------------------- */
+
+  .work-detail {
+    padding: 56px 0;
+  }
+
+  .work-detail__header {
+    margin-bottom: 32px;
+  }
+
+  .work-detail__title {
+    font-size: 24px;
+  }
+
+  .work-detail__preview {
+    margin-bottom: 32px;
+  }
+
+  .work-detail__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    padding-top: 32px;
+  }
+
+  .work-detail__section p {
+    font-size: 14px;
+  }
+
+  .work-detail--placeholder .work-detail__placeholder {
+    height: 200px;
+  }
+
+  /* ----------------------------------------
+     Work Contact
+  ---------------------------------------- */
+
+  .work-contact__description {
+    font-size: 14px;
+  }
+}

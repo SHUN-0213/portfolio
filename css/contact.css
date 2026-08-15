@@ -1,0 +1,191 @@
+/* ========================================
+   Contact Page
+======================================== */
+
+/* ========================================
+   Page Hero
+======================================== */
+
+.page-hero {
+  padding: 180px 0 120px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero__title {
+  margin-bottom: 24px;
+
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.page-hero__description {
+  color: var(--color-text-sub);
+  font-size: 16px;
+}
+
+/* ========================================
+   Contact
+======================================== */
+
+.contact-page {
+  padding: var(--spacing-section) 0;
+}
+
+.contact-page__intro {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.contact-page__intro .section__eyebrow,
+.contact-page__intro .section__title {
+  text-align: center;
+}
+
+.contact-page__description {
+  margin-top: 24px;
+
+  color: var(--color-text-sub);
+  font-size: 15px;
+  line-height: 2;
+}
+
+/* ----------------------------------------
+   Contact Actions (Instagram / Mail)
+---------------------------------------- */
+
+.contact-page__actions {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 56px;
+}
+
+.contact-page .contact__button {
+  color: #ffffff;
+  background-color: var(--color-text);
+}
+
+.contact-page .contact__button:hover {
+  background-color: var(--color-primary);
+}
+
+.contact-page .contact__button--secondary {
+  color: var(--color-text);
+
+  border: 1px solid var(--color-text);
+}
+
+.contact-page .contact__button--secondary:hover {
+  color: #ffffff;
+
+  background-color: var(--color-text);
+}
+
+/* ----------------------------------------
+   Other Links (GitHub / Instagram profile)
+---------------------------------------- */
+
+.contact-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  margin-top: 40px;
+}
+
+.contact-page__links a {
+  padding-bottom: 8px;
+
+  color: var(--color-text-sub);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-page__links a:hover {
+  color: var(--color-primary);
+
+  border-color: var(--color-primary);
+}
+
+/* ========================================
+   Contact Note
+======================================== */
+
+.contact-note {
+  padding: var(--spacing-section) 0;
+
+  background-color: var(--color-background-sub);
+}
+
+.contact-note__description {
+  max-width: 720px;
+
+  margin-top: 24px;
+
+  color: var(--color-text-sub);
+  font-size: 15px;
+  line-height: 2;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 768px) {
+  /* ----------------------------------------
+     Page Hero
+  ---------------------------------------- */
+
+  .page-hero {
+    padding: 140px 0 80px;
+  }
+
+  .page-hero__title {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  /* ----------------------------------------
+     Contact
+  ---------------------------------------- */
+
+  .contact-page__actions {
+    margin-top: 40px;
+  }
+
+  .contact__button-group {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .contact-page .contact__button,
+  .contact-page .contact__button--secondary {
+    width: 100%;
+  }
+
+  .contact-page__links {
+    margin-top: 32px;
+  }
+
+  /* ----------------------------------------
+     Contact Note
+  ---------------------------------------- */
+
+  .contact-note__description {
+    font-size: 14px;
+  }
+}

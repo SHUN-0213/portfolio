@@ -1,0 +1,758 @@
+/* ========================================
+   About Page
+======================================== */
+
+/* ========================================
+   Page Hero
+======================================== */
+
+.page-hero {
+  padding: 180px 0 120px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero__title {
+  margin-bottom: 24px;
+
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.page-hero__description {
+  color: var(--color-text-sub);
+  font-size: 16px;
+}
+
+/* ========================================
+   Profile
+======================================== */
+
+.about-profile {
+  padding: var(--spacing-section) 0;
+}
+
+.about-profile__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+
+.profile-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.profile-list__item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profile-list__item dt {
+  color: var(--color-text-sub);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-list__item dd {
+  font-size: 15px;
+}
+
+/* ----------------------------------------
+   Profile Photo
+---------------------------------------- */
+
+.about-profile__photo {
+  width: 180px;
+  height: 180px;
+
+  margin: 32px 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+
+  background-color: var(--color-background-sub);
+}
+
+.about-profile__photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* ----------------------------------------
+   Local Specialty (ご当地グルメ)
+---------------------------------------- */
+
+.about-profile__local {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 32px;
+  padding: 24px;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-sub);
+}
+
+.about-profile__local-image {
+  flex-shrink: 0;
+
+  width: 96px;
+  height: 96px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+
+  background-color: var(--color-background);
+}
+
+.about-profile__local-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.about-profile__local-label {
+  margin-bottom: 6px;
+
+  color: var(--color-primary);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.about-profile__local-title {
+  margin-bottom: 6px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about-profile__local-description {
+  color: var(--color-text-sub);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ========================================
+   Career
+======================================== */
+
+.about-career {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-background-sub);
+}
+
+.career-list {
+  margin-top: 64px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.career-list__item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 48px;
+
+  padding: 40px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.career-list__year {
+  color: var(--color-primary);
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.career-list__title {
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.career-list__description {
+  max-width: 700px;
+
+  color: var(--color-text-sub);
+
+  font-size: 15px;
+  line-height: 2;
+}
+
+/* ========================================
+   Work
+======================================== */
+
+.about-work {
+  padding: var(--spacing-section) 0;
+}
+
+.work-description {
+  max-width: 720px;
+
+  margin-bottom: 80px;
+}
+
+.work-description p {
+  margin-bottom: 24px;
+
+  color: var(--color-text-sub);
+
+  font-size: 16px;
+  line-height: 2;
+}
+
+.work-description p:last-child {
+  margin-bottom: 0;
+}
+
+.work-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.work-skills__item {
+  padding: 40px 32px 40px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.work-skills__item + .work-skills__item {
+  padding-left: 32px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.work-skills__number {
+  display: block;
+
+  margin-bottom: 40px;
+
+  color: var(--color-primary);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.work-skills__item h3 {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.work-skills__item p {
+  color: var(--color-text-sub);
+
+  font-size: 14px;
+}
+
+/* ========================================
+   Hobby
+======================================== */
+
+.about-hobby {
+  padding: var(--spacing-section) 0;
+  background-color: var(--color-background-sub);
+}
+
+.hobby-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 64px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.hobby-list__item {
+  padding: 40px 32px 40px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hobby-list__item + .hobby-list__item {
+  padding-left: 32px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.hobby-list__number {
+  display: block;
+
+  margin-bottom: 40px;
+
+  color: var(--color-primary);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hobby-list__item h3 {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hobby-list__item p {
+  color: var(--color-text-sub);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   Skills
+======================================== */
+
+.about-skills {
+  padding: var(--spacing-section) 0;
+}
+
+.about-skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 48px;
+}
+
+.about-skills__list span {
+  padding: 10px 18px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.about-skills__list span:hover {
+  color: var(--color-primary);
+
+  border-color: var(--color-primary);
+}
+
+/* ========================================
+   Certifications
+======================================== */
+
+.about-certifications {
+  padding: var(--spacing-section) 0;
+
+  background-color: var(--color-background-sub);
+}
+
+/* ----------------------------------------
+   Certifications Grid
+---------------------------------------- */
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  margin-top: 48px;
+}
+
+/* ----------------------------------------
+   Certification Card
+---------------------------------------- */
+
+.certification-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.certification-card:hover {
+  border-color: var(--color-primary);
+
+  transform: translateY(-6px);
+}
+
+/* ----------------------------------------
+   Certification Badge Area
+---------------------------------------- */
+
+.certification-card__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 220px;
+
+  padding: 20px;
+
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+/* ----------------------------------------
+   Credly Badge
+---------------------------------------- */
+
+.certification-card__badge > div:not(.certification-card__badge-placeholder) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 180px !important;
+  height: 180px !important;
+
+  overflow: hidden;
+}
+
+/* ----------------------------------------
+   Certification Image
+---------------------------------------- */
+
+.certification-card__badge img {
+  display: block;
+
+  width: 180px;
+  height: 180px;
+
+  object-fit: contain;
+}
+
+/* ----------------------------------------
+   FE Badge
+---------------------------------------- */
+
+.certification-card__badge-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 180px;
+  height: 180px;
+
+  color: var(--color-primary);
+
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-sub);
+}
+
+/* ----------------------------------------
+   Certification Content
+---------------------------------------- */
+
+.certification-card__content {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 150px;
+
+  padding: 24px;
+}
+
+/* ----------------------------------------
+   Certification Category
+---------------------------------------- */
+
+.certification-card__category {
+  margin-bottom: 12px;
+
+  color: var(--color-primary);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* ----------------------------------------
+   Certification Title
+---------------------------------------- */
+
+.certification-card__title {
+  margin: 0 0 16px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* ----------------------------------------
+   Certification Year
+---------------------------------------- */
+
+.certification-card__year {
+  margin-top: auto;
+
+  color: var(--color-text-sub);
+
+  font-size: 13px;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1024px) {
+  /* ----------------------------------------
+     Certifications
+  ---------------------------------------- */
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* ----------------------------------------
+     Page Hero
+  ---------------------------------------- */
+
+  .page-hero {
+    padding: 140px 0 80px;
+  }
+
+  .page-hero__title {
+    font-size: clamp(40px, 11vw, 64px);
+  }
+
+  .page-hero__description {
+    font-size: 14px;
+  }
+
+  /* ----------------------------------------
+     Profile
+  ---------------------------------------- */
+
+  .about-profile__grid {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .profile-list__item {
+    grid-template-columns: 100px 1fr;
+
+    gap: 16px;
+  }
+
+  .about-profile__photo {
+    width: 140px;
+    height: 140px;
+
+    margin: 24px 0;
+  }
+
+  .about-profile__local {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 16px;
+  }
+
+  .about-profile__local-image {
+    width: 100%;
+    height: 160px;
+  }
+
+  /* ----------------------------------------
+     Career
+  ---------------------------------------- */
+
+  .career-list {
+    margin-top: 48px;
+  }
+
+  .career-list__item {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    padding: 32px 0;
+  }
+
+  .career-list__title {
+    font-size: 18px;
+  }
+
+  .career-list__description {
+    font-size: 14px;
+  }
+
+  /* ----------------------------------------
+     Work
+  ---------------------------------------- */
+
+  .work-description {
+    margin-bottom: 48px;
+  }
+
+  .work-description p {
+    font-size: 15px;
+  }
+
+  .work-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .work-skills__item,
+  .work-skills__item + .work-skills__item {
+    padding: 32px 0;
+
+    border-left: none;
+  }
+
+  /* ----------------------------------------
+     Hobby
+  ---------------------------------------- */
+
+  .hobby-list {
+    grid-template-columns: 1fr;
+
+    margin-top: 48px;
+  }
+
+  .hobby-list__item,
+  .hobby-list__item + .hobby-list__item {
+    padding: 32px 0;
+
+    border-left: none;
+  }
+
+  /* ----------------------------------------
+     Skills
+  ---------------------------------------- */
+
+  .about-skills__list {
+    gap: 8px;
+
+    margin-top: 40px;
+  }
+
+  .about-skills__list span {
+    padding: 8px 14px;
+
+    font-size: 13px;
+  }
+
+  /* ----------------------------------------
+     Certifications
+  ---------------------------------------- */
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 40px;
+  }
+
+  .certification-card__badge {
+    height: 180px;
+
+    padding: 16px;
+  }
+
+  .certification-card__badge > div:not(.certification-card__badge-placeholder) {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .certification-card__badge img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .certification-card__badge-placeholder {
+    width: 140px;
+    height: 140px;
+
+    font-size: 32px;
+  }
+
+  .certification-card__content {
+    min-height: 140px;
+
+    padding: 20px;
+  }
+
+  .certification-card__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ----------------------------------------
+     Certifications
+  ---------------------------------------- */
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card__badge {
+    height: 200px;
+  }
+
+  .certification-card__badge > div:not(.certification-card__badge-placeholder) {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .certification-card__badge img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .certification-card__badge-placeholder {
+    width: 160px;
+    height: 160px;
+  }
+
+  .certification-card__content {
+    min-height: 140px;
+
+    padding: 20px;
+  }
+}
